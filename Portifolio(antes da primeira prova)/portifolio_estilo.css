@@ -1,0 +1,86 @@
+
+body{
+    background: linear-gradient(180deg, rgb(0,0,255), rgb(0,0,90));
+}
+
+/* Parte do topo */
+.div_alta{
+    color: #000000;
+    background-color: rgb(210, 127, 89);
+    font-family: Arial;
+    margin: 5px;
+    padding-left: auto;
+    padding-right: auto;
+    border: black;
+    border-style: inset;
+    text-align: center;
+}
+
+.div_alta img, p{
+    display: inline-block;
+    padding: 2px;
+}
+.div_alta p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.div_alta img{
+    max-width: 120px; 
+    max-height: 120px 
+}
+/* Meio onde falo de min */
+.Imaykoll {
+    background-color: coral;
+    margin: 5px;
+    padding: 20px;
+    border-style: inset;
+    border: black;
+}
+
+.Imaykoll h3{
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    text-align: center;
+}
+
+.Imaykoll p{
+    font-family: Arial;
+    font-size: 14px;
+    text-align: justify;
+}
+/* Parte dos meus cursos e escolaridade empregos antigos*/
+.CursosEstudoEmprego{
+    background-color: aliceblue;
+    padding: 20px;
+    box-sizing: 0;
+    margin: 5px;
+    border-style: inset;
+    border: black;
+}
+
+article{
+    display: inline-flex;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(230, 157, 67);
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/*Como acontesse nas acoras*/
+a{
+    color: rgb(5, 25, 245);
+}
+
+a:visited{
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+    color:rgb(101, 114, 250);
+}

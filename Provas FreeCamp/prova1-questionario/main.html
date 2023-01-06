@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario de conclusão</title>
+        <link href="prova.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="cabeca">
+           <h1 id="title">Formulario OTAKU</h1>
+            <p id="description">
+                Esse é um Formulario de quem curte um anime.
+            </p> 
+        </div>
+        
+        <form id="survey-form" method="post">
+            <label for="name" id="name-label">Nome: <input id="name" type="text" placeholder="Entre com o nome" required></label>
+            <label for="email" id="email-label" >Email:<input id="email" placeholder="Entre com Email" type="email" required /></label>
+            <label for="number" id="number-label">Idade(opcional):<input id="number" name="idade" type="number" placeholder="idade" max="100" min="16"/></label>
+            <hr>
+            <label>Gosta de anime?</label>
+            <label name="gosto-label" for="sim"><input type="radio" id="sim" name="gosto">Sim</label>
+            <label name="gosto-label" for="nao"><input type="radio" id="nao" name="gosto">Não</label>
+            
+            <label for="dropdown" id="select-label">Dos antigos animes qual gostava quando era criança:
+                <select id="dropdown">
+                    <option value="">Escolha um</option>
+                    <option value="1">Dragon Ball</option>
+                    <option value="2">Naruto Classico</option>
+                    <option value="3">Qualque um melhor que esses</option>
+                </select>
+            </label>
+            <div class="escolha">
+                <label>Qual seu Estilo de anime favorito:</label>
+                <label name="check-label"><input type="checkbox">Shounen</label>
+                <label name="check-label"><input type="checkbox">Shoujo</label><br>
+                <label name="check-label"><input type="checkbox">Seinen</label>
+                <label name="check-label"><input type="checkbox">outro</label>
+            </div>
+            <label>Entre como foi sua experiencia no site:<br>
+                <textarea rows="3" cols="30" placeholder="texto area"></textarea>
+            </label>
+            
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
