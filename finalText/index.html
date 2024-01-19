@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Program Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="c-title">
+        <h1 id="title">Linguagen de programação Favorita</h1>
+        <p id="description">Questionario sobre preferencias de linguagens e sua area de atuação.</p>
+    </div>
+    <main>
+        <form id="survey-form">
+            <fieldset class="about">
+                <legend>Dados pessoais</legend>
+                <label for="name" id="name-label">Nome: </label>
+                <input type="text" id="name" placeholder="Seu nome." required />
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" id="email" placeholder="carlinho123@<endereço>.com" required />
+                <label for="number" id="number-label">Tempo de programação: </label>
+                <input type="number" id="number" placeholder="Tempo de contribição+estudos" min="0" max="50" required />
+                <label for="dropdown">Como atua na area?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Trabalha</option>
+                        <option value="2">Freelacer</option>
+                        <option value="3">Estuda</option>
+                        <option value="4">Outro</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="atua">
+                <legend>Qual area você atual?</legend>
+                <label from="front-at"><input type="radio" id="front-at" name="atual" value="front" checked />
+                    Front-end</label>
+                <label from="back-at"><input type="radio" id="back-at" name="atual" value="back" /> Back-end</label>
+                <label from="full-at"><input type="radio" id="full-at" name="atual" value="full" /> Fullstack</label>
+                <label from="dataanly-at"><input type="radio" id="dataanly-at" name="atual" value="dataanly" /> Analista
+                    de dados</label>
+                <label from="outro"><input type="radio" id="outro-at" name="atual" value="outro" /> Outro</label>
+            </fieldset>
+
+            <fieldset class="ling_exp">
+                <legend>Linguagens e experiência</legend>
+                <label>Qual das linguagens abaixo você usa ou já usou?</label>
+                <label><input type="checkbox" value="js" /> JavaScript</label>
+                <label><input type="checkbox" value="java" /> Java</label>
+                <label><input type="checkbox" value="c#" /> C#</label>
+                <label><input type="checkbox" value="c" /> C/C++</label>
+                <label><input type="checkbox" value="py" /> Python</label>
+                <label><input type="checkbox" value="php"> PHP</label>
+                <label><input type="checkbox" value="outro"> outro</label>
+
+                <label for="bio">Fale suas experiencias com a linguagens e experiência em questão:
+                    <textarea id="bio" name="bio" rows="3" cols="40"
+                        placeholder="Com a linguagem ... atuei na parte de ..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+
+    </main>
+    <footer>
+        <p>Create by <a href="https://www.freecodecamp.org/Maykoll_Rocha" target="_blank">Maykoll Rocha</a> completion
+            of chapter one of five of the course <a href="https://www.freecodecamp.org"
+                target="_blank">freecodecamp</a>.</p>
+    </footer>
+</body>
+
+</html>
