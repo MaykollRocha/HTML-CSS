@@ -1,0 +1,197 @@
+:root{
+    --cor-fundo: blue;
+   }
+   
+   body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+       line-height: 1.6;
+   }
+   /*Barrada de navegação*/
+   #navbar {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       background-color: #000;
+       color: #fff;
+       text-align: center;
+   }
+   
+   #navbar ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+   }
+   
+   #navbar li {
+       display: inline;
+   }
+   
+   #navbar a {
+       display: inline-block;
+       color: #fff;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+   
+   #navbar a:hover {
+       background-color: #ddd;
+       color: black;
+   }
+   
+   /*Display de Boas vindas*/
+   #welcome-section {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+       background: var(--cor-fundo);
+       color: white;
+       text-align: center;
+   }
+   .foto {
+               margin-left: 2vh;
+               height: 20vh; /* Altura da imagem */
+               width: 20vh; /* Largura da imagem */
+               border-radius: 50%; /* Torna a imagem circular */
+               background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqS02iCyAuYFrMgiYUtapZtcdT3C0jJStkOQ&s); /* URL da imagem de fundo */
+               background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+               background-repeat: no-repeat; /* Evita que a imagem se repita */
+               background-position: center; /* Centraliza a imagem */
+   }
+   
+   
+   #projects {
+       height: 60vh;
+       padding: 5vh;
+       background: #ecf0f1;
+       text-align: center;
+       white-space: nowrap; /* Garante que os elementos filhos não quebrem linha */
+   
+   }
+   
+   
+   .projects-container {
+       display: flex;
+       gap: 20px;
+       overflow-x: auto; /* Habilita a rolagem horizontal */
+       white-space: nowrap; /* Impede que os itens quebrem para uma nova linha */ 
+   }
+   
+   .project-content {
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       
+   }
+   
+   .project-tile {
+       background: #fff;
+       padding: 0;
+       border-radius: 5px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+       width: 300px;
+       height: auto; /* Altura ajustada para o conteúdo */
+       text-align: center;
+       border: 2px solid #1abc9c;
+       margin-right: 20px; /* Espaçamento entre os tiles */
+       
+   }
+   
+   
+   
+   .project-tile img {
+       width: 100%;
+       height: 80%;
+       object-fit: cover;
+   }
+   
+   .project-tile p {
+       margin: 0;
+       padding: 10px;
+       height: 20%;
+       background: blue;
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .project-tile a {
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   .project-tile a:hover {
+       color: inherit;
+   }
+   
+   #contact {
+       height: 85vh;
+       padding: 5vh;
+       text-align: center;
+       background: #333;
+       color: #fff;
+   }
+   
+   #contact h1 {
+           font-size: 100;
+           margin-bottom: 20px;
+           text-align: center;
+       }
+   #contact a {
+           color: white;
+           font-size: 40;
+           text-decoration: none;
+           margin: 10px 10px 10px 0px;
+           padding: 20px;
+           border-radius: 4px;
+           transition: background-color 0.3s ease;
+       }
+   #contact a:hover {
+           background-color: #f0f0f0;
+       }
+   #contact a:action{
+       color: white;
+   }
+   #contact a i {
+           margin-right: 10px;
+       }
+   
+   footer{
+       top: 0;
+       width: 100%;
+       background-color: #000;
+       color: #fff;
+       text-align: center;
+   }
+   footer a{
+       background-color: #000;
+       color: #fff;
+   }
+   /* Media query for responsiveness */
+   @media (max-width: 1024px) {
+       #projects {
+           height: 100vh;  
+       }
+   }
+   @media (max-width: 768px) {
+       #projects {
+       height: 100vh;  
+       }
+       #navbar li {
+           display: block;
+       }
+   
+       #navbar a {
+           padding: 10px;
+           display: block;
+       }
+   
+       .project-tile {
+           margin: 10px;
+       }
+   }
+   
