@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentação Técnica Portugol</title>
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>Pseudolinguagem Portugol</header>
+        <a class="nav-link" href="#Sobre_Portugol">Sobre Portugol</a>
+        <a class="nav-link" href="#Portugol_X_Pascal">Portugol X Pascal</a>
+        <a class="nav-link" href="#Olá_Mundo">Olá Mundo</a>
+        <a class="nav-link" href="#Tipagem">Tipagem</a>
+        <a class="nav-link" href="#Definir_Variavel">Definir Variavel</a>
+        <a class="nav-link" href="#Operadores">Operadores</a>
+        <a class="nav-link" href="#Desvios">Desvios</a>
+        <a class="nav-link" href="#Laços_de_Repetição">Laços de Repetição</a>
+        <a class="nav-link" href="#Proximo_Passos">Proximo Passos</a>
+
+    </nav>
+    <main id="main-doc">
+<!-- Primeira sessão -->
+        <section class="main-section" id="Sobre_Portugol" >
+            <header id="titulo">Sobre Portugol</header>
+            <p id="subtitulo">O que é um pseudocódigo?</p>
+            <p id="text">Pseudocódigo é uma forma genérica de escrever um algoritmo, utilizando uma linguagem simples sem a necessidade de conhecer qualquer sintaxe de qualquer linguagem de programação livre de contexto.</p>
+            <p id="subtitulo">Variações</p>
+            <p id="text">A primeira variação (dialecto) de Portugol foi criada por António Manso (Portugal) em 1986 e originou outras duas variações. O esforço iniciou como uma tradução da linguagem de programação Pascal para a língua portuguesa. Esta variação de Portugol, baseada em Pascal, atualmente é conhecida como Portugol VisuAlg, implementada em seu próprio editor por Cláudio Morgado de Souza.</p>
+            <p id="subtitulo">História inicial</p>
+            <p id="text">Variações inspiradas em outras linguagens de programação além de Pascal, como as linguagens C, C++ e Java. O Portugol Studio, implementado pelo núcleo de tecnologia da UNIVALI, é uma implementação baseada em Java e também escrita inteiramente em Java. Outras variações conhecidas são: G-Portugol, Portugol Viana e P&G editor.</p>
+        </section>
+<!-- Segunda sessão -->
+        <section class="main-section" id="Portugol_X_Pascal" >
+            <header id="titulo">Portugol X Pascal</header>
+            <p id="subtitulo">O que foi o Pascal?</p>
+            <p id="text">Pascal é a descendente direta da linguagem de programação chamada ALGOL, que era usada apenas em mainframes. Os primeiros compiladores da linguagem de programação Pascal foram criados e adaptados para microcomputadores.</p>
+            <p id="subtitulo">Qual a semelhança?</p>
+            <p id="text">O primeiro escritor da primeira versão do Portugol escreveu idealmente pensando que as palavras em inglês escritas no Pascal fossem apenas traduzidas para o português e usadas como Portugol.</p>
+            <p id="text">O portugol que será abordado nessa documentação sera o portugol do Visualg</p>
+        </section>
+<!-- Terceira sessão -->
+        <section  class="main-section" id="Olá_Mundo">
+            <header id="titulo">Olá Mundo</header>
+            <p id="text">O Portugol que usaremos aqui será o clássico geralmente estudado quando se estuda Portugol.</p>
+            <div class="codigo">
+              <code><p><span class="flag">algoritmo</span> <span class="nome_projet">"ola-mundo"</span></p>
+              <p class="flag">var</p>
+              <p class="flag">inicio</p>
+              <p class="ident">escreva(<span class="str">"Olá mundo"</span>);</p>
+              <p class="flag">fimalgoritmo</p></code>
+            </div> 
+            <p id="text">Ao ensinar o "Olá Mundo" você passa a sua primeira função principal de todo codigo que é a saida de dados no terminal. O escreva(string) é o que faz o codigo escrever na sua tela terminal e apresentar a informalção que quer passar</p>
+            <p id="text">Acima está um dos exemplos mais clássicos de código, que seria o código do "Hello World" que foi a primeira coisa que apareceu em uma tela de PC quando a Apple lançou seu primeiro computador.</p>
+           
+        </section>
+<!-- Quarta sessão -->
+        <section  class="main-section" id="Tipagem">
+            <header id="titulo">Tipagem</header>
+            <p id="text">O Portugol é fortemente tipado, ou seja, ao definir uma variável, essa será desse tipo enquanto seu código a estiver usando e nunca mudará.</p>
+          <div class="tab">
+            <ul>
+              <li><strong>Tipos</strong></li>
+              <li>inteiro</li>
+              <li>real</li>
+              <li>lógico</li>
+              <li>caracter</li>
+            </ul>
+            <ul>
+              <li><strong>Exemplos</strong></li>
+              <li>1, 2, 3, -10, 0,...</li>
+              <li>1.4, 0.5, -12.42,...</li>
+              <li>Verdadeiro/Falso</li>
+              <li>a, b, c,...</li>
+            </ul>
+          </div>
+        </section>
+<!-- Quinta sessão -->
+        <section  class="main-section" id="Definir_Variavel">
+            <header id="titulo">Definir Variavel</header>
+            <p id="text">Para fazer a atribuição de variavel é com o simblo de uma ceta "<-", esta pode ser colocade em 2 ambientes local ou gobal, global escreve na sessão var e local escreve depois da sessão do início. </p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"Variaveis_definir"</span></p>
+              <p class="flag">var</p>
+              <p><span class="com">//aqui estamos definindo variais globais</span></p>
+              <p>msg : <span class="tipo">caracter</span></p>
+              <p>numero : <span class="tipo">inteiro</span></p>
+              <p>flutuante1,flutuante2 : <span class="tipo">real</span></p>
+              <p class="flag">inicio</p>
+              <p class="ident">msg <- <span class="str">"João"</span><span class="com">//Isso é uma atribuição</span><p>
+              <p class="ident"> leia(msg)<span class="com">//Entrada de dados</span><p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <p id="text">Acima temos duas operações importante a de input e output que seria a função de escreva e de leia, e a atribuição usa-se setas.</p>
+        </section>
+<!-- Sexto -->
+        <section  class="main-section" id="Operadores">
+            <header id="titulo">Operadores</header>
+            <p id="text">Existem Tres tipos de operadores os logicos, aritméticos e relacionais. </p>
+            <h4>Operadores Artimedicos</h4>
+            <p id="text"> São os operadores que fazem as contas matemáticas dentro do nosso codigo, esse operadores podem variar de linguagem para linguagem e aumentar com a aplicação de bibliotecas. Os do Portugol são:</p>
+            <div class="tab">
+            <ul>
+              <li><strong>Aritméticos</strong></li>
+              <li>+</li>
+              <li>-</li>
+              <li>/</li>
+              <li>*</li>
+              <li>% ou MOD</li>
+              <li>^</li>
+            </ul>
+            <ul>
+              <li><strong>Funcionalidade</strong></li>
+              <li>Adição</li>
+              <li>Subtração</li>
+              <li>Multiplicação</li>
+              <li>Divisão</li>
+              <li>Resto ou Módulo</li>
+              <li>Potenciação</li>
+            </ul>
+          </div>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"Operadores Aritmético"</span></p>
+              <p class="flag">var</p>
+              <p class="flag">inicio</p>
+              <p class="ident">escrevar(<span class="str">"Soma: "</span>,5+3)</p>
+              <p class="ident">escrevar(<span class="str">"Subtração: "</span>,5-3)</p>
+              <p class="ident">escrevar(<span class="str">"Divisão: "</span>,5/3)</p>
+              <p class="ident">escrevar(<span class="str">"Resto: "</span>,(5%3)</p>
+              <p class="ident">escrevar(<span class="str">"Multiplicação: "</span>,5*3)</p>
+              <p class="ident">escrevar(<span class="str">"Potencia: "</span>,5^3)</p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <h4>Operadores Relacionais</h4>
+            <p id="text"> Os operadores logico server para tirar resulados boleanos pode ser comparado qualquer elemento que seja do mesmo tipo, se for tipos diferentes não é feito a comparação.</p>
+            <div class="tab">
+            <ul>
+              <li><strong>Relacionais</strong></li>
+              <li>=</li>
+              <li><></li>
+              <li>></li>
+              <li><</li>
+              <li>>=</li>
+              <li><=</li>
+            </ul>
+            <ul>
+              <li><strong>Funcionalidade</strong></li>
+              <li>Igual</li>
+              <li>Diferente</li>
+              <li>Maior que</li>
+              <li>Menor que</li>
+              <li>Maior ou igual a</li>
+              <li>Menor ou igual a</li>
+            </ul>
+          </div>
+          <p id="text">Exemplo em código:</p>
+          <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"Operadores Relacionais"</span></p>
+              <p class="flag">var</p>
+              <p class="flag">inicio</p>
+              <p class="ident">escrevar(<span class="str">"1 Igual 2: "</span>,1 = 2)</p>
+              <p class="ident">escrevar(<span class="str">"1 Diferente 2: "</span>,1 <> 2)</p>
+              <p class="ident">escrevar(<span class="str">" 1 Maior que 2: "</span>, 1 > 2)</p>
+              <p class="ident">escrevar(<span class="str">" 1 Menor que 2 : "</span>,1 < 2)</p>
+              <p class="ident">escrevar(<span class="str">"1 Maior ou igual a 2: "</span>,1 >= 2)</p>
+              <p class="ident">escrevar(<span class="str">"1 Menor ou igual a 2: "</span>,1 <= 2)</p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+          <h4>Operadores Lógicos</h4>
+            <p id="text"> Server para aumentar a funcinalidade dos operadores lógicos quando você compara duas logicas ou mais para ter uma grander lógica final.</p>
+            <div class="tab">
+            <ul>
+              <li><strong>Lógicos</strong></li>
+              <li>E</li>
+              <li>OU</li>
+              <li>NAO</li>
+              <li>XOU</li>
+            </ul>
+            <ul>
+              <li><strong>Funcionalidade</strong></li>
+              <li>Conjunção</li>
+              <li>Disjunção</li>
+              <li>Negação</li>
+              <li>XOR</li>
+            </ul>
+          </div>
+          <p id="text">Todas operações tem seu tipo de saida expecífico: </p>
+          <p id="texto"><strong>Conjunção:</strong> Resulta VERDADEIRO somente se seus dois operandos lógicos forem verdadeiros.</p>
+          <p id="texto"><strong>Disjunçã:</strong> VERDADEIRO quando um dos seus
+operandos lógicos for verdadeiro.</p>
+          <p id="texto"><strong>Negação:</strong> nao VERDADEIRO = FALSO, e nao FALSO = VERDADEIRO</p>
+          <p id="texto"><strong>XOR:</strong> VERDADEIRO se seus dois operandos lógicos forem diferentes, e FALSO se forem iguais.</p>
+        </section>
+<!-- Quinta sessão -->
+        <section  class="main-section" id="Desvios">
+            <header id="titulo">Desvios</header>
+            <p id="text">Os desvios são os condicionais de Se...senão muito importante e utlizados em todo os codigo que prescisão de no mínimo de lógica </p>
+            <h4>Se</h4>
+            <p id="text">A condição simples se baseia em fazer um inicio e um fim direto.</p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"Se"</span></p>
+              <p class="flag">var</p>
+              <p class="flag">inicio</p>
+              <p class="ident"><strong>se</strong> 2=2 <strong>então</strong><p>
+              <p class="ident2">escreva(verdade)</p>
+              <p class="ident"><strong>fimse</strong></p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <h4>Se..não</h4>
+            <p id="text">Tambem podemos ter um ação para caso a condição seja falsa que sera um desvio:</p>
+             <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"Se_não"</span></p>
+              <p class="flag">var</p>
+              <p class="flag">inicio</p>
+              <p class="ident"><strong>se</strong> 2=2 <strong>então</strong><p>
+              <p class="ident2">escreva("Verdade")</p>
+              <p class="ident"><strong>senao</strong><p>
+              <p class="ident2">escreva("Falso")</p>
+              <p class="ident"><strong>fimse</strong></p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <h4>Escolha</h4>
+            <p id="text">E por fim temos a condição de desvio de casos onde criamos condições para um variavel respeitar: </p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"escolha..caso"</span></p>
+              <p class="flag">var</p>
+              <p>escolha : <span class="tipo">inteiro</span></p>
+              <p class="flag">inicio</p>
+              <p class="ident">leia(escolha)</p>
+              <p class="ident"><strong>escolha</strong> escolha <strong></strong><p>
+              <p class="ident2"><strong>caso</strong> 1</p>
+              <p class="ident3"><span class="com">//Aqui escreve o trexo do codigo</p>
+              <p class="ident2"><strong>caso</strong> 2</p>
+              <p class="ident3"><span class="com">//Aqui escreve o trexo do codigo</p><p class="ident2"><strong>outrocaso</strong></p>
+              <p class="ident3"><span class="com">//Aqui escreve o trexo do codigo</p>
+              <p class="ident"><strong>fimescolha</strong></p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+        </section>
+<!-- Oitava sessão-->
+        <section  class="main-section" id="Laços_de_Repetição">
+            <header id="titulo">Laços de Repetição</header>
+            <p id="text">Os lalos de repetição atualmente são 3, for,while e do..while porem muitas linguagem não tem o do..while, essa pseudolinguagem tem e por isso vou mostrar elas. Os loços são importante para deixar seu codigo em loop até quando quiser e criar ali oque quiser, aindan usando um switch e futuramente trabalhar com funções e procedimentos.</p>
+            <h4>repita..até</h4>
+            <p id="text">As condições varia de ponto a ponto, e como utilizar cada laço vai do caso, um caso simples para faça..até e quando você tem que entregar algo que presciso ver primeiro a entrada que a comparação como receber uma senha ou algo assim.</p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"repita..até"</span></p>
+              <p class="flag">var</p>
+		<p>senha : <span class="tipo">caracter</span></p>
+              <p class="flag">inicio</p>
+              <p class="ident"><strong>repita</strong></p>
+              <p class="ident2">ler(senha)</p>
+              <p class="ident"><strong>enquanto</strong> senha != "1234214"</p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <h4>enquanto..faça</h4>
+            <p id="text">O laço enquanto prescisa respeitar as condições inicias para entrar no laço, assim como o if que você percisa de uma condição para entrar, mas o while ou enquanto não possui um condição reversa. Para isso você coloca sua variavel de entrada com uma condição que respeite o inicio dela.</p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"enquanto..até"</span></p>
+              <p class="flag">var</p>
+		<p>i : <span class="tipo">inteiro</span></p>
+              <p class="flag">inicio</p>
+              <p class="ident">i <- 1</p>
+              <p class="ident"><strong>enquanto </strong>i <= 10<strong></strong></p>
+              <p class="ident2">escreva(i)</p>
+              <p class="ident2">i <- i + 1</p>
+              <p class="ident"><strong>fimenquanto</strong></p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+            <h4>para..faça</h4>
+            <p id="text">Para é muito usado para diversas atividades como intergir com laçõs lineares, vatores ou fazer algo que prescise de forçã bruta enquanto temos isso usaremos, no futuro quando aprender funções teremos recursão.</p>
+            <div class="codigo">
+            <code>
+              <p><span class="flag">algoritmo</span> <span class="nome_projet">"para...faça"</span></p>
+              <p class="flag">var</p>
+		          <p>i : <span class="tipo">inteiro</span></p>
+              <p class="flag">inicio</p>
+              <p class="ident"><strong>para</strong> i <strong>de</strong> 1 <strong>até</strong> 10 <strong>passo</strong> 1 <strong>faça</strong></p>
+              <p class="ident2">escreva(i)</p>
+              <p class="ident"><strong>fimpara</strong></p>
+              <p class="flag">fimalgoritmo</p>
+            </code>
+            </div>
+</section>
+<section  class="main-section" id="Proximo_Passos">
+            <header id="titulo">Proximo Passos</header>
+            <p id="text">Dentro de uma pseudolinguagem continuação se basearia em continuar aprendendo estrutura de dados, e para isso devemos aprender conceitos como vetores, matriz, procedimentos, funções e apos isso trocar para um C/C++ ou alguma linguagem com ponteiro.</p>
+        <ol>
+          <li>Vetores/Matrizes</li>
+          <li>Registros</li>
+          <li>Procedimento/Função</li>
+          <li>Comandos Especiais(randi, interrompa)</li>
+        </ol>
+        <p id="text"> E acabamos por aqui, temos tudo que é nescessario para aprender mais, a pseudolinguagem te ajuda a ter uma visão mais ampla das coisas e é muito importante, e claro praticar sempre e mudar para uma lingaugem de alto nivel como C/C++ por ser mais aparente com o portugol so que em ingles assim como pascal</p>
+</section>  
+<footer>
+    <p>De <a href="https://www.linkedin.com/in/maykoll-rocha-a75529206/" target="_blank">Maykoll Rocha</a> mais uma obra do curso da freecodecamp.</p>
+  </footer>
+</body>
+    </main>
+  
+
+</html>
