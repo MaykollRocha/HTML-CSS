@@ -3,7 +3,7 @@
 </p>
 <hr>
 
-<h1 align="center">Portfólio: HTML, CSS e JavaScript</h1>
+<h1 align="center">Portfólio: HTML/CSS/JavaScript</h1>
 
 <p align="center">
   <strong>Projetos Desenvolvidos</strong>
