@@ -1,3 +1,9 @@
+const lancheForm = document.getElementById('add-lanche-form')
+const formaBotton = document.getElementById('show-form-btn');
+const clseBtn = document.getElementById('close-lanche-form-btn');
+let lancheData;
+
+
 // Inicializar os dados do localStorage
 const getDataFromLocalStorage = () => {
     const data = localStorage.getItem('lancheData');
@@ -52,12 +58,11 @@ const updateContainers = (data) => {
     });
 };
 
-// Inicializar dados e atualizar contêineres
-let lancheData = getDataFromLocalStorage();
+lancheData = getDataFromLocalStorage();
 updateContainers(lancheData);
 
 // Adicionar novo item ao formulário
-document.getElementById('add-lanche-form').addEventListener('submit', (event) => {
+lancheForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Evita o comportamento padrão de submissão do formulário
 
     // Obter dados do formulário
@@ -79,15 +84,15 @@ document.getElementById('add-lanche-form').addEventListener('submit', (event) =>
     updateContainers(lancheData);
 
     // Limpar o formulário
-    document.getElementById('add-lanche-form').reset();
+    lancheForm.reset();
 });
 
 // Mostrar formulário
-document.getElementById('show-form-btn').addEventListener('click', () => {
-    document.getElementById('add-lanche-form').style.display = 'block'; // Mostrar o formulário
+formaBotton.addEventListener('click', () => {
+    lancheForm.style.display = 'block'; // Mostrar o formulário
 });
 
 // Fechar formulário
-document.getElementById('close-lanche-form-btn').addEventListener('click', () => {
-    document.getElementById('add-lanche-form').style.display = 'none'; // Esconder o formulário
+clseBtn.addEventListener('click', () => {
+    lancheForm.style.display = 'none'; // Esconder o formulário
 });
