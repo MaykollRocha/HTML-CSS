@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+    color: black;
+    text-align: center;
+}
+.gaxinin{
+    height: 600px;
+    width: 600px;
+    animation: gaxinin 4s linear infinite,colorChange 4s linear infinite;
+}
+
+@keyframes gaxinin {
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    12.5% {
+        filter: hue-rotate(45deg);
+    }
+    25% {
+        filter: hue-rotate(90deg);
+    }
+    37.5% {
+        filter: hue-rotate(135deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    62.5% {
+        filter: hue-rotate(225deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+    87.5% {
+        filter: hue-rotate(315deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

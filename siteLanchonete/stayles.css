@@ -1,0 +1,154 @@
+/* Estilo geral */
+body {
+    background-image: url("ima/fundo.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo dos títulos */
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-size: 30px;
+}
+
+/* Canto de seleção */
+.menu {
+    background-color: blanchedalmond;
+    width: 1020px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: dotted;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Onde tem as imagens dos lanches e tudo mais */
+.dados {
+    background-color: white;
+    width: 1000px;
+    height: 800px;
+    padding: 10px;
+    margin: 10px auto;
+    border: double 5px;
+}
+
+/* Divisão por lanche */
+.separador {
+    border: double;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 12px;
+    background-color: blanchedalmond;
+    display: inline-block;
+}
+
+/* Imagens */
+.image {
+    max-width: 210px;
+    max-height: 100px;
+    border: solid burlywood;
+}
+
+/* Nome dos lanches */
+.NomeLanche {
+    font-family: Arial;
+    font-size: 14px;
+}
+#title{
+    background-color: blanchedalmond;
+    width: 1000px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: dotted;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+/* Estilo do formulário */
+#add-lanche-form {
+    display: none; /* Inicialmente escondido */
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Borda arredondada para suavizar o visual */
+    padding: 20px;
+    width: 300px; /* Ajustar conforme necessário */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adicionar sombra para profundidade */
+    position: absolute; /* Ficar sobre outros elementos */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centralizar no meio da tela */
+}
+
+/* Estilo dos campos do formulário */
+#add-lanche-form input,
+#add-lanche-form select {
+    width: calc(100% - 22px); /* Ajustar para incluir padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Borda arredondada para suavizar o visual */
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de submissão */
+#add-lanche-form button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Borda arredondada para suavizar o visual */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%; /* Botão ocupa toda a largura do formulário */
+}
+
+/* Estilo do botão de submissão ao passar o mouse */
+#add-lanche-form button:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro */
+}
+
+/* Estilo do botão para mostrar o formulário */
+#show-form-btn {
+    background-color: blanchedalmond; /* Cor de fundo verde */
+    color: black;
+    border: none;
+    border-radius: 4px; /* Borda arredondada para suavizar o visual */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin: 20px auto; /* Centralizar o botão horizontalmente */
+}
+
+/* Estilo do botão de mostrar o formulário ao passar o mouse */
+#show-form-btn:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro */
+}
+
+/* Estilo do rodapé */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanchonete Meu Sonho Cunhado</title>
+    <link href="stayles.css" rel="stylesheet" />
+</head>
+<body align="center">
+    <header class="menu">
+        <h1>
+            <img class="image" src="ima/cardapio.png" alt="Cardápio">
+            Cardápio
+            <img class="image" src="ima/cardapio.png" alt="Cardápio">
+        </h1>
+    </header>
+
+    <main id="lanches-container">
+        <section>
+            <h1 id="title">
+                <img src="ima/sanduiche.png" alt="Lanches">
+                Lanches
+                <img src="ima/sanduiche.png" alt="Lanches">
+            </h1>
+            <div id="lanche"></div>
+        </section>
+
+        <section>
+            <h1 id="title">
+                <img src="ima/pizza.png" alt="Pizza">
+                Pizza
+                <img src="ima/pizza.png" alt="Pizza">
+            </h1>
+            <div id="massa"></div>
+        </section>
+        <section>
+            <h1 id="title">
+                <img src="ima/sanduiche.png" alt="Acompanhamento">
+                Acompanhamento
+                <img src="ima/pizza.png" alt="Acompanhamento">
+            </h1>
+            <div id="Acompanhamento"></div>
+        </section>
+        <section>
+            <h1 id="title">
+                <img src="ima/lanche.png" alt="Bebidas">
+                Bebidas
+                <img src="ima/lanche.png" alt="Bebidas">
+            </h1>
+            <div id="liquido"></div>
+        </section>
+    </main>
+
+    <!-- Botão para mostrar o formulário -->
+    <button id="show-form-btn">Adicionar Novo Item</button>
+
+    <!-- Formulário para adicionar novos itens -->
+    <form id="add-lanche-form">
+        <input type="text" id="name-input" placeholder="Nome do Item" required>
+        <input type="text" id="image-input" placeholder="URL da Imagem" required>
+        <input type="number" id="price-input" placeholder="Preço (R$)" step="0.01" required>
+        <select id="type-input" required>
+            <option value="lanche">Lanche</option>
+            <option value="massa">Pizza</option>
+            <option value="liquido">Bebida</option>
+        </select>
+        <button type="submit">Adicionar Item</button>
+        <button type="button" id="close-lanche-form-btn">Fechar</button> <!-- Botão de fechamento -->
+    </form>
+
+    <!-- Rodapé -->
+    
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 <i>Lanchonete Meu Sonho Cunhado</i>. Todos os direitos reservados a Maykoll Rocha.</p>
+    </footer>
+</body>
+    
+</html>
