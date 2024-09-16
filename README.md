@@ -33,10 +33,5 @@
 
 <h2>Como Visualizar</h2>
 <p>
-  Para visualizar os projetos, basta acessar os arquivos HTML diretamente ou seguir os links fornecidos para as versões hospedadas online.
-</p>
-
-<h2>Contribuições</h2>
-<p>
-  Sinta-se à vontade para abrir uma issue ou enviar um pull request com sugestões ou melhorias.
+  Para visualizar os projetos, basta acessar os arquivos HTML diretamente.
 </p>
