@@ -19,9 +19,9 @@
 
 <h2>Projetos em Destaque</h2>
 <ul>
-  <li><strong>Site Lachonte</strong>(HTML/CSS/JS)</li>
+  <li><strong>Site Lanchonte</strong>(HTML/CSS/JS)</li>
   <li><strong>Documentação Portugol</strong>(HTML/CSS)</li>
-  <li><strong>Questinario</strong>(HTML/CSS)</li>
+  <li><strong>Questinário</strong>(HTML/CSS)</li>
 </ul>
 
 <h2>Objetivos</h2>
