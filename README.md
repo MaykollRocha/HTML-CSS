@@ -1,37 +1,42 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML--CSS--JS-Study-brightgreen" alt="HTML-CSS-JS Study">
+  <img src="https://img.shields.io/badge/Portfolio-HTML--CSS--JS-brightgreen" alt="Portfolio HTML-CSS-JS">
 </p>
 <hr>
 
-<h1 align="center">HTML, CSS e JavaScript</h1>
+<h1 align="center">Portfólio: HTML, CSS e JavaScript</h1>
 
 <p align="center">
-  <strong>Estudos e Projetos</strong>
+  <strong>Projetos Desenvolvidos</strong>
 </p>
 
 <p align="center">
-  Este repositório contém os meus estudos e projetos realizados em HTML, CSS e JavaScript, com base no material oferecido pelo FreeCodeCamp.
+  Este repositório apresenta uma coleção dos meus projetos em HTML, CSS e JavaScript, desenvolvidos como parte dos meus estudos e práticas na área de desenvolvimento web.
 </p>
 
 <p>
-  Ao longo do desenvolvimento deste projeto, explorei e pratiquei diversas técnicas de design e programação web, aprimorando minhas habilidades em front-end. Os projetos aqui apresentados incluem desde a criação de layouts responsivos até a implementação de interatividade com JavaScript.
+  Aqui você encontrará exemplos de sites e aplicações web que demonstram minha capacidade de construir layouts responsivos, estilizar interfaces e adicionar funcionalidades interativas. Cada projeto reflete o conhecimento e as habilidades adquiridas ao longo dos meus estudos e desafios práticos.
 </p>
+
+<h2>Projetos em Destaque</h2>
+<ul>
+  <li><strong>Site Lachonte</strong>(HTML/CSS/JS)</li>
+  <li><strong>Documentação Portugol</strong>(HTML/CSS)</li>
+  <li><strong>Questinario</strong>(HTML/CSS)</li>
+</ul>
 
 <h2>Objetivos</h2>
 <ul>
-  <li>Desenvolver habilidades práticas em HTML, CSS e JavaScript.</li>
-  <li>Aplicar conceitos aprendidos em projetos reais.</li>
-  <li>Explorar boas práticas de desenvolvimento web.</li>
+  <li>Demonstrar habilidades em HTML, CSS e JavaScript através de projetos práticos.</li>
+  <li>Desenvolver e aperfeiçoar técnicas de design e programação web.</li>
+  <li>Mostrar a capacidade de criar interfaces funcionais e visualmente atraentes.</li>
 </ul>
 
-<h2>Conteúdo</h2>
-<ul>
-  <li>Layouts responsivos com HTML e CSS.</li>
-  <li>Estilização avançada com CSS.</li>
-  <li>Interatividade e manipulação do DOM com JavaScript.</li>
-</ul>
-
-<h2>Como Contribuir</h2>
+<h2>Como Visualizar</h2>
 <p>
-  Se você deseja contribuir para este projeto, fique à vontade para abrir uma issue ou enviar um pull request com melhorias ou correções.
+  Para visualizar os projetos, basta acessar os arquivos HTML diretamente ou seguir os links fornecidos para as versões hospedadas online.
+</p>
+
+<h2>Contribuições</h2>
+<p>
+  Sinta-se à vontade para abrir uma issue ou enviar um pull request com sugestões ou melhorias.
 </p>
